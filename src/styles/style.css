@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+}
+
+body{
+    background: black;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    flex-direction: column;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.title {
+    border-bottom: 2px solid lightgray;
+}
+
+/* to do lis */
+.todo_list {
+    margin: 0 auto;
+    color: white;
+    background-color: rgb(37, 37, 37);
+    width: 400px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 30px;
+}
+
+.todo_list input {
+    
+    width: 80%;
+    height: 30px;
+    border-radius: 10px;
+    font-size: 16px;
+    text-align: center;
+    border: none;
+    margin-bottom: 5px;
+}
+
+.input_area_button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:20px;
+    margin-top: 10px;
+}
+
+.input_area_button button {
+    width: 60px;
+    height: 25px;
+    border: none;
+    text-transform: uppercase;
+    background-color: rgb(168, 165, 165);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.input_area_button button:hover {
+    transform: scale(1.2);
+    transition: .3s ease;
+}
+
+.list_field {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .3s ease;
+}
+
+.ul_items  {
+    list-style: none;
+    display: flex;
+}
+
+.ul_items li {
+    background-color:rgb(85, 84, 84) ;
+    height: 30px;
+    width: 360px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.remove_btn,.edit_btn  {
+    border: none;
+    border-radius: 5px;
+    background-color: transparent ;
+    color: white;
+}
+
+.remove_btn:hover,.edit_btn:hover {
+    transform:translateY(-4px);
+    color: black;
+    transition: .3s ease;
+
+}
+
+.task_text {
+    margin-left: 10px;
+}
+
+li:hover {
+    background: gray;
+    transition: .3s ease;
+}
+
+dialog {
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    background: rgb(77, 76, 76)   ;
+    color: white;
+    border: none;  
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+
+
+/* to do head */
+
+.to_do_head {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.to_do_head_icons {
+    display: flex;
+    margin: 10px;
+}
+
+
+
+i {
+    font-size: 16px;
+    margin: 5px;
+}
+
+i:hover {
+    transform: scale(1.4);
+    color: black;
+}
+
+span button {
+    border: none;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+}
+
+span button:hover {
+    transform: scale(1.3);
+    transition: .5s ease;
+}
+

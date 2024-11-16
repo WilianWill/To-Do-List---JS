@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./src/styles/style.css" />
+
+    <!-- font awsome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <main class="container">
+      <div class="todo_list">
+        <!-- todo_head -->
+        <div class="to_do_head">
+          <h1><span class="title">Tod Do</span> List</h1>
+
+          <div class="to_do_hed_icons">
+            <span class="eye">
+              <button id="show_tasks">
+                <!--  <i id="closed_eye" class="fa-regular fa-eye-slash"></i> -->
+                <i id="eye" class="fa-regular fa-eye"></i>
+              </button>
+            </span>
+            <span class="plus">
+              <button id="add_task_button">
+                <i class="fa-solid fa-plus"></i>
+              </button>
+            </span>
+          </div>
+        </div>
+        <div class="input_area">
+          <input
+            type="text"
+            id="task_input"
+            placeholder="Put your taks here.."
+          />
+        </div>
+        <div class="list_field">
+          <ul class="ul_items"></ul>
+        </div>
+      </div>
+    </main>
+    <script src="./src/scripts/index.js"></script>
+  </body>
+</html>
